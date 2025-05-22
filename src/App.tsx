@@ -1,9 +1,14 @@
-import './App.css';
+import { CssBaseline, ThemeProvider, GlobalStyles } from '@mui/material';
+
+import { MainPage } from './connectors';
+import { theme, globalStyles } from './shared/ui';
 
 export const App = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <GlobalStyles styles={globalStyles} />
+      <MainPage />
+    </ThemeProvider>
   );
 };

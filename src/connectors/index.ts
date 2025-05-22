@@ -1,0 +1,1 @@
+export { MainPageConnector as MainPage } from './MainPageConnector';
