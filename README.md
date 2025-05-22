@@ -11,3 +11,5 @@
 ### Инициализация и запуск:
 - `npm i` - установка зависимостей
 - `npm run start` - запуск приложения
+
+## Открыть приложение по ссылке: https://mindbox-test-production.up.railway.app/
