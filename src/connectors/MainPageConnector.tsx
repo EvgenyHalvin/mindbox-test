@@ -41,10 +41,10 @@ export const MainPageConnector = () => {
   };
 
   const sortByCompletedHandler = () => {
-    setTodos(sortByCompleted(todos, sortCompletedOrder));
     setSortCompletedOrder(prev => (prev === 'asc' ? 'desc' : 'asc'));
     setTodos(sortByCompleted(todos, sortCompletedOrder));
   };
+
   return (
     <PageTemplate title="TO-DO List">
       <ToDoForm onSubmit={onSubmitHandler} />
